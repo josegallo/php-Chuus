@@ -1,0 +1,782 @@
+@font-face {
+    font-family: GothamBook;
+    /*src: url(../fonts/GothamFree/GOTHAM-LIGHT.ttf);*/
+    src: url(../fonts/GothamFree/gotham-light.woff);
+    /*src: url(../fonts/GothamFree/gotham_light.eot);*/
+}
+
+*{
+	background: black;
+	font-family: GothamBook;
+/*	font-family: sans-serif;*/
+   	font-size: 18px;
+   	color: white;
+}
+
+header {
+	border-bottom: 1px solid grey;
+	height: 80px;
+}
+
+.header {
+	display: inline-block;
+}	
+
+.left-arrow, .right-arrow, .or-signal, .left-square, .right-square, .check-left, .check-right {
+	background: url(../images/spriteschuus.png) no-repeat;
+}
+
+.Queprefieres2{
+	background: url(../images/LogoChuus.png) no-repeat;
+	width: 160px;
+	height: 42px;
+	margin: 25px 0 0 20px;
+	background-size: contain;
+}
+
+#header-search {
+	margin: 20px;
+	position: absolute;
+	left: 300px;
+	top: 9px;
+}
+
+.search{
+	border-radius: 0px;
+	font-size: 0.9em;
+}
+
+.search-submit{
+	display: none;
+}
+
+div#header-submit {
+    background: url(../images/Envia-preguntas.png) no-repeat;
+    width: 140px;
+    height: 30px;
+	}
+
+div#header-submit:hover {
+    background: url(../images/Envia-preguntas-hover.png) no-repeat;
+	}
+
+div#header-submit {
+    position: absolute;
+    right: 0px;
+    margin: 25px 125px;
+    text-align: right;
+    padding: 7px 0px 0 0;
+}
+
+div#header-submit a {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 0.75em;
+    padding-right: 15px;
+}
+
+div#search-results{
+/*	margin: 0 0 0 0px;*/
+	padding: 20px 0 0 20px;
+	/*position: relative;*/
+	/*background: black;*/
+	border-bottom: 1px solid grey;
+/*	z-index: 4;*/
+}
+
+div#search-results a{
+	text-decoration: none;
+}
+
+div#search-results a:hover{
+	color: yellow;
+}
+
+form#header-search input#words-search {
+	font-size: 0.75em;
+	text-align: center;
+	height: 25px;
+}
+
+/*login menu at header*/
+
+a#onclick {
+	text-decoration: none;
+	font-size: 0.75em;
+}
+
+nav#menu-changable {
+	background: transparent;
+}
+
+nav#menu-changable ul.header.sing-up li a {
+	text-decoration: none;
+	font-size: 0.75em;
+}
+
+nav#menu-changable ul.header.sing-up {
+	background: transparent;
+}
+
+
+/*.header.login-header {*/
+nav#menu-changable{
+    position: absolute;
+    right: 0px;
+    margin: 30px 25px;
+    text-align: right;
+    z-index: 10;
+}
+
+.header.login-header:hover ul {
+	display: block;
+	z-index: 10;
+}
+a#remove-login-header {
+	font-size: 0.75em;
+	text-decoration: none;
+}
+
+/*end of login menu at header*/
+
+/*style of login pop-up and sign-up pop-up*/
+#draggable-login{
+	border: transparent;
+}
+
+#login {
+	background-color:white;
+	width:350px;
+	height: 330px;
+	border-radius:15px;
+	padding:20px 30px;
+	display:block; 
+	position: absolute;
+	z-index: 10;
+	display: none;
+}
+
+#draggable-signup{
+	border: transparent;
+}
+
+#sign-up{
+	background-color:white;
+	width:350px;
+	height: 450px;
+	border-radius:15px;
+	padding:20px 30px;
+	display:block; 
+	position: absolute;
+	z-index: 10;
+	display: none;
+}
+
+#close-login-wrap, #close-sign-up-wrap{
+	display: inline-block;
+	background-color:white;
+	width:350px;
+	height: 40px;
+	position: relative;
+	left: -30px;
+	border-bottom: 1px solid grey;
+}
+
+#login h3, #sign-up h3{
+	background-color: white;
+}
+
+#login h3 #title-popup, span#title-popup-sign-up{
+	width: 50px;
+	display: inline-block;
+	font-size:20px;
+	font-style: bold;
+	color: black;
+	background-color: white;
+	position: absolute;
+	top: 8px;
+	left:30px;
+}
+
+#login h3 #login-error-popup, span#sign-up-error-popup{
+	display: inline-block;
+	width: 220px;
+	background: white;
+	position: relative;
+	margin-left: 5px;
+	left: 80px;
+	top: 8px
+	font-size: 0.8em;
+	font-style: bold;
+	color: #E43232;
+}
+
+#popup-close, #sign-up-close{
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	left: 290px;
+	background: url(../images/popup.close.sprite.png) no-repeat;
+	background-position: 0 0px ;
+    -ms-transform: scale(0.3,0.3); /* IE 9 */
+    -webkit-transform: scale(0.3,0.3); /* Safari */
+    transform: scale(0.3,0.3);
+	width: 60px;
+	height: 60px;
+	border: solid black 1px;
+}
+
+#popup-close:hover, #sign-up-close:hover {
+	background-position: -60px 0px;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+
+#login label, #sign-up label {
+	color: black;
+	background-color: white;
+	}
+
+#login p, #sign-up p{
+	background-color: white;
+}
+
+#login p a, #sign-up p a{
+	font-size: 0.7em;
+	color: #2b9dc6;
+	background-color: white;
+	text-decoration: none;
+}
+
+#login p a:hover, #sign-up p a:hover{
+	color: #4C869A;
+	text-decoration: underline;
+}
+
+#login input, #sign-up input{
+	width:100%;
+	height:35px;
+	margin-top:5px;
+	border:1px solid #999;
+	border-radius:3px;
+	padding:5px;
+	background-color:#f9f9f9;
+	color: grey;
+}
+
+#login button, #sign-up button {
+	border:none;
+	color: grey;
+}
+#loginbtn, #signupbtn{
+	background: url(../images/buttons.popup.sprite.png) no-repeat;
+	background-position: -132px -232px;
+	width: 84px;
+	height: 32px;
+	position: relative;
+	left: 205px;
+}
+
+#loginbtn:hover, #signupbtn:hover{
+	background-position: -132px -199px;
+	width: 84px;
+	height: 33px;
+}
+
+/*end of login pop-up*/
+
+.sing-up {
+	margin-top: 5px;
+	display: none;
+}
+
+body {
+	/*height: 850px;*/
+	height: 800px;
+	background: black;
+	background: url(../images/background8.png) repeat;
+	z-index: -2;
+}
+
+body h2 {
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+.que-prefieres {
+	position: absolute;
+	margin-top: 50px;
+	background: none;
+	font-size: 1.05em;
+}
+
+/*questions frame*/
+/*this class have to be change along with all its inner classes*/
+.wrap-questions{
+	display: inline-block;
+	z-index: -1;
+}
+
+.questions {
+	display: inline-block;
+}
+
+.left-arrow {
+	position: absolute;
+	top: 269px;
+	z-index: 10;
+}
+
+.left-arrow{
+	background-position: -113px -502px ;	
+	width: 45px;
+	height: 45px;
+}
+
+.left-arrow:hover{
+	background-position: -112px -555px ;
+	width: 45px;
+	height: 45px;
+}
+
+.left-square {
+	min-width: 500px;
+	position: absolute;
+	top: 167px;
+	height: 250px;
+}
+
+.left-square{
+	background-position: 0 0;
+	width: 490px;
+	height: 245px;
+}
+
+.left-square:hover{
+	background-position: 0 -252px ;
+	width: 490px;
+	height: 245px;
+}
+
+.check-left {
+	display: block;
+	position: relative;
+	top:15px;
+	left:15px;
+	min-height: 40px;
+	min-width: 40px;
+}
+
+.check-right {
+	display: block;
+	position: relative;
+	top:15px;
+	left:442px;
+	min-height: 40px;
+	min-width: 40px;
+}
+
+.check-left, .check-right {
+	background-position: -282px -531px ;
+	width: 34px;
+	height: 34px;
+}
+
+.percent_votes_left, .percent_votes_right {
+	width: 430px;
+	position: relative;
+	display: inline-block;
+	margin-left: 35px;
+	text-align: center; 
+	padding: 0px;
+	font-size: 3.2em;
+	background: none;
+	top: 15px;
+}
+
+.votes_left, .votes_right {
+	width: 430px;
+	position: relative;
+	margin-left: 35px;
+	text-align: center; 
+	padding: 0px;
+	font-size: 0.9em;
+	background: none;
+	top: 40px;
+}
+
+.text-square {
+	width: 430px;
+	position: relative;
+	top: 35px;
+	margin-left: 35px;
+	text-align: center; 
+	padding: 20px;
+	background: none;
+	font-size: 1.20em;
+}
+
+.text-clicked {
+	width: 430px;
+	position: relative;
+	margin-left: 35px;
+	text-align: center; 
+	padding: 0px;
+	font-size: 0.9em;
+	background: none;
+	top: 60px;
+}
+
+.or-signal {
+	position: absolute;
+	top: 250px;
+	height: 20px;
+	z-index: 4;
+}
+
+.or-signal{
+	background-position: 0 -517px ;
+	width: 83px;
+	height: 83px;
+}
+
+.right-square {
+	min-width: 500px;
+	position: absolute;
+	top: 167px;
+	height: 250px;
+}
+
+.right-square{
+	background-position: -506px 0;
+	width: 490px;
+	height: 245px;
+}
+
+.right-square:hover{
+	background-position: -507px -254px ;
+	width: 490px;
+	height: 245px;
+}
+
+.right-arrow {
+	top: 269px;
+	z-index: 1;
+	position: absolute;
+}
+
+.right-arrow{
+	background-position: -191px -503px ;
+	width: 45px;
+	height: 45px;
+}
+
+.right-arrow:hover{
+	
+	background-position: -192px -555px ;
+	width: 45px;
+	height: 45px;
+}
+
+/*end of questions frame*/
+
+/*user dash	board*/
+
+#pendent-title-table{
+	display: inline;
+	font-size: 1.2em;
+	background-color: #666364;
+	padding: 5px 20px 0px 20px;
+}
+
+#pendent-title-table:hover, #acepted-title-table:hover {
+	color: yellow;
+}
+
+#acepted-title-table{
+	display: inline;
+	margin-left: 30px;
+	font-size: 1.2em;
+	background-color: #666364;
+	padding: 5px 20px 0px 20px;
+}
+
+#error-cpasword-message {
+	font-size: 0.9em;
+	font-style: bold;
+	color: #E43232;
+}
+
+#user-dashboard, #user-dashboard h3, #user-dashboard h4, 
+#user-dashboard h5, 
+#text-change-password, #user-dashboard table, 
+#error-cpasword-message, #user-dashboard form,
+#admin-pendent-questions-table,
+table#admin-acepted-questions-table{
+	padding: 20px 0 0 20px;
+	background-color: black;
+}
+
+#admin-pendent-questions-table, table#admin-acepted-questions-table{
+	border: 1px solid #666364;	
+}
+
+p.range1, p.range2 {
+    display: inline-block;
+}
+
+p.range1:hover, p.range2:hover {
+   text-decoration: underline;
+   font-weight:bold;
+   color: yellow;
+}
+p.range2 {
+    padding: 20px 0 0 1px;
+}
+
+#user-dashboard h4, #user-dashboard h5 {
+	font-weight:normal;
+}
+
+#user-dashboard{
+	min-height: 350px;
+	padding-bottom: 30px;
+}
+
+#user-dashboard form{
+	padding-bottom: 30px;
+}
+
+#user-dashboard table, #admin-pendent-questions-table,
+table#admin-acepted-questions-table {
+	text-align: left;
+	font-size: 1.1em;
+}
+
+#user-dashboard table th {
+	font-size: 1.15em;
+	background-color: black;
+	text-align: left;
+	height: 60px;
+	font-weight: bold;	
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0px 15px 20px;
+}
+
+#user-dashboard table th:hover{
+	color: yellow;
+}
+
+#all-user-questions tbody td,
+#admin-pendent-questions-table tbody td,
+table#admin-acepted-questions-table tbody td{
+	text-align: left;
+	padding: 15px 0px 15px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+#user-dashboard table td:hover{
+	color: yellow;
+}
+
+#user-dashboard #all-user-questions tr:last-child td {
+	text-align: left;
+	padding: 0 0 0 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+#user-dashboard #all-user-questions input {
+	width: 380px;
+	height: 30px;
+	border: none;
+}
+
+#user-dashboard #all-user-questions tbody td:first-child input {
+	width: 650px;
+}
+
+.pendent-questions {
+	color: #E43232;
+}
+
+/*admin-pendent-questions-table images*/
+
+.question-delete, .question-acept, .success {
+	background: url(../images/delete-aprove.png) no-repeat;
+}
+
+.question-delete {
+	background-position: 0 -130px;
+	width: 20px;
+	height:20px;
+	margin-left: 26px;
+}
+
+.question-delete:hover {
+	background-position: -21px -130px;
+}
+
+.question-acept{
+	background-position: 0 -177px;
+	width: 20px;
+	height:20px;
+	margin-left: 26px;
+}
+
+.question-acept:hover {
+	background-position: -21px -177px;
+	width: 20px;
+	height:20px;
+}
+
+.success {
+   	background-position: -42px -177px;
+   	width: 20px;
+	height:20px;
+	margin-left: 26px;
+}
+	
+/*end of user dashboard*/
+
+/*footer*/
+
+footer {
+	position: relative;
+	margin-top: 480px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	height: 80px;
+    background-color: rgb(47, 46, 47);
+	z-index: 1;
+}
+
+.social {
+	display: inline-block;
+	position: absolute;
+	left: 515px;
+    margin: 20px 0 0 93px;
+	background-color: transparent;
+}
+
+.social-buttons {
+	display: inline-block;
+	background-color: transparent;
+
+}
+
+.twitter-share-button {
+/*	border: 1px solid yellow;*/
+}
+
+iframe#twitter-widget-0 {
+	background-color: transparent;
+}
+
+#facebook-icon {
+	position: relative;
+	top: 2px;
+	background: url(../images/icon_facebook_compartir4.png) no-repeat;
+	background-position: -1px -1px ;
+	width: 105px;
+	height: 30px;
+	background-size:90%;
+/*	border-radius: 5px;*/
+}
+
+#facebook-icon:hover {
+	position: relative;
+	top: 2px;
+	background: url(../images/icon_facebook_compartir4-hover.jpeg) no-repeat;
+	width: 105px;
+	height: 30px;
+	background-size:90%;
+
+}
+.author {
+	margin: 30px 0 0 20px;
+	display: inline-block;
+	background-color: transparent;
+	font-size: 0.75em;
+}
+
+.created {
+	position: absolute;
+	display: inline-block;
+	margin-top: 30px;
+	right: 50px;
+	background-color: transparent;
+	font-size: 0.75em;
+}
+
+/*end of footer*/
+
+/*top ten*/
+
+#wrap-top-ten {
+	padding: 5px 0 0 20px;
+	position: relative;
+	/*margin-top: 100px;*/
+	/*height: 250px;*/
+	height: 180px;
+    background-color: #434344;
+}
+
+#complementblack {
+	position: relative;
+	height: 300px;
+    background-color: black;
+}
+
+#wrap-top-ten p {
+	background-color: #434344;
+	color: #9E9E9E;
+	font-size: 0.95em;
+/*	color: black;*/
+}
+
+div#wrap-top-ten a {
+	text-decoration: none;
+	background-color: #434344;
+	color: #9E9E9E;
+	font-weight: bold;
+	font-size: 0.95em;
+}
+
+div#wrap-top-ten a:hover {
+	color: white;
+}
+
+/*end of top ten*/
+
+.hidden {
+	background: none;
+}
+
+.hide {
+	display: none;
+}
+
+.stop-arrow {
+	color: yellow;
+}
+
+.error-get-id{
+	background-color: black;
+	padding: 0 0 0 20px;
+	color: red;
+	font-size: 1.9em;	
+}
+
+/*recover pass page*/
+.Recover-pass-tittle {
+	text-align: left;
+	margin: 0 0 0 20px;
+	font-size: 1.2em;
+	color: yellow;
+}
+
+#table-recover-pass td:last-child {
+	text-align: center;
+	padding: 15px;
+}
