@@ -1,6 +1,6 @@
 # chuus
 
-Dynamic web project in php, sql, ajax, jquery and javascript on apache server. 
+Dynamic web project in php, sql, mysql, ajax, jquery and javascript on apache server. 
 
 If you want to upload this project take into account this instructions:
 
